@@ -3,9 +3,12 @@ import ButtonsContainer from "./components/ButtonsContainer";
 import styles from "./App.module.css";
 
 function App() {
+
+let [calVal , setCalVal ] = useState("");
+  
   return (
     <div className={styles.calculator}>
-      <Display></Display>
+      <Display displayValue = {caalValue}></Display>
       <ButtonsContainer></ButtonsContainer>
     </div>
   );
